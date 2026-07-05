@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Trail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+     <header>
+
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+       <div class="top-bar main-top-bar">
+
+         <button id="menu-btn">
+          ☰
+         </button>
+
+        <h1>Money Trail</h1>
+
+       </div>
+       <div id="side-menu" class="side-menu">
+        <div class="sidebar-header">
+         ☰
+       </div>
+
+         <p id="home-link">
+           Main Page
+         </p>
+
+      <p id="dashboard-link">
+        Dashboard
+      </p>
+
+      <p id="theme-toggle">
+        Dark Mode
+      </p>
+
+     </div>
+
+      <p class="quote">
+        Track every rupee, understand every habit
+      </p>
+
+
+    </header>
+      
+        <form id="expense-form" class="expense-form">
+
+            <h2>Add Expense</h2>
+        
+        <div class="expense-row">
+
+    <input
+        type="text"
+        id="expense-name"
+        placeholder="Name"
+    >
+
+    <select id="category">
+        <option value="Select">
+            Select Category
+        </option>
+    </select>
+
+    <input
+        type="number"
+        id="expense-amount"
+        placeholder="Amount"
+    >
+
+    <input
+        type="date"
+        id="expense-date"
+    >
+
+    <button
+        type="button"
+        id="add-btn">
+        Add Expense
+    </button>
+
+</div>
+
+        </form>
+
+        <section class="expense-list">
+
+            <h2>Today's Expenses</h2>
+
+            <ul id="expense-items">
+
+            </ul>
+
+        </section>
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/script.js"></script>
+
+<div id="overlay" class="overlay"></div>
+
+</body>
+</html>

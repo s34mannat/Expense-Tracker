@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Trail Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+        
+        <div class="dashboard-top-bar">
+
+           <span id="menu-btn">
+              ☰
+           </span>
+
+           <span class="dashboard-title">
+              Dashboard
+           </span>
+
+        </div>
+        <div id="side-menu" class="side-menu">
+            <div class="sidebar-header">
+              ☰
+            </div>
+
+            <p id="home-link">
+              Main Page
+            </p>
+
+            <p id="dashboard-link">
+              Dashboard
+            </p>
+
+            <p id="theme-toggle">
+              Dark Mode
+            </p>
+
+        </div>
+    </header>
+
+     <div class="stats-grid">
+
+        <div class="card">
+
+            <h3>Total Transactions</h3>
+
+            <p id="dashboard-count">
+                0
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Top Category</h3>
+
+            <p id="dashboard-top-category">
+                None
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="dashboard-main-card">
+
+        <h3>Total Expenses</h3>
+
+        <p id="dashboard-total">
+            ₹0
+        </p>
+
+    </div>
+
+    <section class="summary-cards">
+
+    <div class="summary-card">
+        <h3>Today</h3>
+        <p id="today-total">₹0</p>
+    </div>
+
+    <div class="summary-card">
+        <h3>Week</h3>
+        <p id="week-total">₹0</p>
+    </div>
+
+    <div class="summary-card">
+        <h3>Month</h3>
+        <p id="month-total">₹0</p>
+    </div>
+
+    <div class="summary-card">
+        <h3>Year</h3>
+        <p id="year-total">₹0</p>
+    </div>
+
+</section>
+
+<section class="expense-list">
+
+    <h2>💡 Spending Insight</h2>
+
+    <p id="insight-text">
+        Start adding expenses to see insights.
+    </p>
+
+</section>
+
+<div class="search-container">
+
+    <input
+        type="text"
+        id="search-input"
+        placeholder="Search expense name..."
+    >
+
+    <button
+        id="search-btn"
+        class="search-icon-btn">
+        ⌕
+    </button>
+
+</div>
+
+<section class="expense-form">
+
+    <h2>Filter Expenses</h2>
+
+    <select id="filter-category">
+
+        <option value="All">
+            All Categories
+        </option>
+
+    </select>
+
+</section>
+
+<section class="expense-form">
+
+    <h2>Manage Categories</h2>
+
+    <div class="category-management">
+
+        <input
+            type="text"
+            id="new-category"
+            placeholder="Create a new category"
+        >
+
+        <button
+            type="button"
+            id="add-category-btn">
+            Add<br>Category
+        </button>
+
+        <div class="category-delete-row">
+
+            <select id="delete-category-select">
+
+                <option value="">
+                    Select Category
+                </option>
+
+            </select>
+
+            <button
+                type="button"
+                id="delete-category-btn">
+                🗑
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="expense-form">
+
+    <button id="export-btn">
+        Export CSV
+    </button>
+
+</section>
+
+   
+
+    <section class="expense-list">
+
+        <h2>Expense Analytics</h2>
+
+        <div class="chart-container">
+
+            <canvas id="expense-chart"></canvas>
+
+        </div>
+
+    </section>
+
+    <section class="expense-list">
+
+        <h2>Category Breakdown</h2>
+
+        <ul id="category-analysis">
+
+        </ul>
+
+    </section>
+
+    <section class="expense-list">
+
+        <h2>Recent Expenses</h2>
+
+        <ul id="recent-expenses">
+
+        </ul>
+
+    </section>
+
+    <section class="expense-list">
+
+    <h2>Expenses</h2>
+
+    <ul id="expense-items">
+
+    </ul>
+
+</section>
+
+    <button
+        onclick="window.location.href='index.html'">
+
+        Back To Tracker
+
+    </button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/script.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+<div id="overlay" class="overlay"></div>
+
+</body>
+</html>
