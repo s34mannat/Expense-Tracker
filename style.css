@@ -6,7 +6,7 @@
 
 
 body{
-    background-image: url("../images/background-light.jpg");
+    background-image: url("background-light.jpg");
 
     background-size: cover;
 
@@ -1021,7 +1021,7 @@ select {
 
 }
 body.dark-mode{
-    background-image: url("../images/background-dark.jpg");
+    background-image: url("background-dark.jpg");
 }
 .stats-grid .card{
     background: white;
